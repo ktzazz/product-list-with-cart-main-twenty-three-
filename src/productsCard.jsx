@@ -1,3 +1,5 @@
+import { BtnCart } from "./addCart";
+
 export const Items = ({ info }) => {
   return (
     <div className="product__grid">
@@ -16,9 +18,11 @@ export const Items = ({ info }) => {
             />
             <img src={product.image.mobile} alt={product.name} />
           </picture>
+
           <h3>{product.name}</h3>
           <p>{product.category}</p>
           <p>{product.price}</p>
+          <BtnCart />
         </div>
       ))}
     </div>
