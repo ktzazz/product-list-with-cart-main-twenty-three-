@@ -22,7 +22,7 @@ export const Items = ({ info }) => {
           <h3>{product.name}</h3>
           <p>{product.category}</p>
           <p>{product.price}</p>
-          <BtnCart />
+          <BtnCart product={product} />
         </div>
       ))}
     </div>
