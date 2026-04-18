@@ -1,6 +1,7 @@
 import "./scss/App.scss";
 import { useState, useEffect } from "react";
 import { Items } from "./ProductsCard";
+import { Cart } from "./cart";
 import CartProvider from "./CartProvider";
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
       <div className="products">
         <Items info={products} />
       </div>
-      <div className="cart">etiqueta para el carrito</div>
+      <Cart />
     </CartProvider>
   );
 }

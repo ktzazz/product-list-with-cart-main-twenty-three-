@@ -1,3 +1,4 @@
+import "./scss/addCart.scss";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 

@@ -1,10 +1,11 @@
+import "./scss/productsCard.scss";
 import { BtnCart } from "./addCart";
 
 export const Items = ({ info }) => {
   return (
     <div className="product__grid">
-      {info.map((product) => (
-        <div className="product__card" key={product}>
+      {info.map((product, index) => (
+        <div className="product__card" key={`${product}_${index}`}>
           <picture>
             <source
               media="(min-width: 1024px)"
