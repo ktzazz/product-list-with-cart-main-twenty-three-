@@ -10,17 +10,11 @@ export const Cart = () => {
     return total + item.price * item.quantity;
   }, 0);
 
-  if (cart.lenght === 0) {
-    console.log("Cart is empty");
-  } else {
-    console.log("Cart is not empty" + cart);
-  }
-
   return (
     <div className="cart__container">
       <h2 className="cart__title">Your Cart ({totalItems})</h2>
 
-      {cart.lenght === 0 ? (
+      {cart.length === 0 ? (
         <div className="cart__empty">
           <img src="/images/illustration-empty-cart.svg" alt="cart_empty" />
           <h3>Your added items will appear here</h3>

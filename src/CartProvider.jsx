@@ -33,6 +33,7 @@ const CartProvider = ({ children }) => {
       if (!item) return prev; //si !item devuelve el elemento prev tal cual o sea la lista sin modificaciones.   ¿Existe en el carrito? Si no, ignora el clic.
       if (item.quantity === 1)
         return prev.filter((article) => article.name !== name); // El .filter() dice: "Déjame pasar a todos los artículos cuyo nombre sea DIFERENTE (!==) al que quiero quitar".   ¿Solo queda 1? Usa .filter() para sacarlo de la bolsa definitivamente.
+      if (item === 0) return setCart([]);
       return prev.map(
         (
           article, // else... si item, a la quantity del elemento article se le va a restar 1, si no regresa el elemento article tal cual.   ¿Hay muchos? Usa .map() y el spread operator (...) para restarle uno a la copia.
