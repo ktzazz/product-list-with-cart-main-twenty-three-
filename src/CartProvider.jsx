@@ -18,7 +18,7 @@ const CartProvider = ({ children }) => {
           ) =>
             item.name === product.name
               ? { ...item, quantity: item.quantity + 1 }
-              : item, //si no son iguales se mantiene sin modificar el elemento item
+              : item, //si no son iguales se mantiene sin modificar el elemento item, se le agrega (crea) la propiedad quantity
         );
       }
       return [...prevItem, { ...product, quantity: 1 }]; // si !exists devuelve el elemento prevItem con el elemento product teniendo quantity 1
@@ -56,7 +56,13 @@ const CartProvider = ({ children }) => {
 
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, removeFromCart, removeItem, clearCart }}
+      value={{
+        cart,
+        addToCart,
+        removeFromCart,
+        removeItem,
+        clearCart,
+      }}
     >
       {children}
     </CartContext.Provider>

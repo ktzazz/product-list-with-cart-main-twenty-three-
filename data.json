@@ -8,6 +8,7 @@
     },
     "name": "Waffle with Berries",
     "category": "Waffle",
+    "ingredient": "Vanilla",
     "price": 6.5
   },
   {
@@ -19,6 +20,7 @@
     },
     "name": "Vanilla Bean Crème Brûlée",
     "category": "Crème Brûlée",
+    "ingredient": "Vanilla",
     "price": 7.0
   },
   {
@@ -30,6 +32,14 @@
     },
     "name": "Macaron Mix of Five",
     "category": "Macaron",
+    "ingredient": [
+      "Chocolate",
+      "Vanilla",
+      "Caramel",
+      "Strawberry",
+      "Pistachio"
+    ],
+
     "price": 8.0
   },
   {
@@ -41,6 +51,7 @@
     },
     "name": "Classic Tiramisu",
     "category": "Tiramisu",
+    "ingredient": ["Chocolate", "Coffee"],
     "price": 5.5
   },
   {
@@ -52,6 +63,7 @@
     },
     "name": "Pistachio Baklava",
     "category": "Baklava",
+    "ingredient": "Pistachio",
     "price": 4.0
   },
   {
@@ -63,6 +75,7 @@
     },
     "name": "Lemon Meringue Pie",
     "category": "Pie",
+    "ingredient": ["Lemon", "Vanilla"],
     "price": 5.0
   },
   {
@@ -74,6 +87,7 @@
     },
     "name": "Red Velvet Cake",
     "category": "Cake",
+    "ingredient": ["Chocolate", "Strawberry"],
     "price": 4.5
   },
   {
@@ -85,6 +99,7 @@
     },
     "name": "Salted Caramel Brownie",
     "category": "Brownie",
+    "ingredient": ["Chocolate", "Caramel"],
     "price": 4.5
   },
   {
@@ -96,6 +111,7 @@
     },
     "name": "Vanilla Panna Cotta",
     "category": "Panna Cotta",
+    "ingredient": "Vanilla",
     "price": 6.5
   }
 ]
