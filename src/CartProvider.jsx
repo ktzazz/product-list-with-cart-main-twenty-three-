@@ -49,9 +49,14 @@ const CartProvider = ({ children }) => {
     setCart((prev) => prev.filter((item) => item.name !== name));
   };
 
+  const clearCart = () => {
+    setCart([]);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, removeFromCart, removeItem }}
+      value={{ cart, addToCart, removeFromCart, removeItem, clearCart }}
     >
       {children}
     </CartContext.Provider>

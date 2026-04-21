@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
+import { Confirmation } from "./confirmation";
 
 export const Cart = () => {
   const { cart, removeItem } = useContext(CartContext);
@@ -54,7 +55,7 @@ export const Cart = () => {
             <span className="note">delivery</span>
           </div>
 
-          <button className="btn__checkout">Confirm Order</button>
+          <Confirmation total={orderTotal} />
         </div>
       )}
     </div>
