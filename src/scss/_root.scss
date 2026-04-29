@@ -1,0 +1,23 @@
+@use "variables" as v;
+
+:root {
+  --red: #{v.$Red};
+  --green: #{v.$Green};
+  --rose-50: #{v.$Rose-50};
+  --rose-100: #{v.$Rose-100};
+  --rose-300: #{v.$Rose-300};
+  --rose-400: #{v.$Rose-400};
+  --rose-500: #{v.$Rose-500};
+  --rose-900: #{v.$Rose-900};
+
+  --font-family: #{v.$font-family};
+  --category-f-size: #{v.$category-f-size};
+  --add-to-f-size: #{v.$add-to-f-size};
+  --products-name-f-size: #{v.$products-name-f-size};
+  --h1-f-size: #{v.$h1-f-size};
+  --cart-title-f-size: #{v.$cart-title-f-size};
+
+  --weight-400: #{v.$weight-400};
+  --weight-600: #{v.$weight-600};
+  --weight-700: #{v.$weight-700};
+}
