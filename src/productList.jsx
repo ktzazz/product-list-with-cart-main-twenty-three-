@@ -7,7 +7,7 @@ export const ProductList = () => {
   const { filteredProducts } = useContext(CartContext);
 
   return (
-    <div className="product-grid">
+    <div className="product__grid">
       {/* Mapeamos sobre la lista filtrada, no sobre el JSON original */}
       {filteredProducts.map((producto) => (
         <Items key={producto.name} product={producto} />

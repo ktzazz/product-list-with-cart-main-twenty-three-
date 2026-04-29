@@ -7,10 +7,16 @@ import CartProvider from "./CartProvider";
 function App() {
   return (
     <CartProvider>
-      <h1>Desserts</h1>
-      <Filter />
-      <ProductList />
-      <Cart />
+      <div className="dessert_filter__cont">
+        <h1>Desserts</h1>
+        <Filter />
+      </div>
+      <div className="product_list__cont">
+        <ProductList />
+      </div>
+      <div className="cartMain__cont">
+        <Cart />
+      </div>
       <footer className="attribution">
         {" "}
         Challenge by{" "}
