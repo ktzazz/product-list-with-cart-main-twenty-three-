@@ -7,13 +7,16 @@ import CartProvider from "./CartProvider";
 function App() {
   return (
     <CartProvider>
-      <div className="dessert_filter__cont">
-        <h1>Desserts</h1>
-        <Filter />
+      <div className="block__a">
+        <div className="dessert_filter__cont">
+          <h1>Desserts</h1>
+          <Filter />
+        </div>
+        <div className="product_list__cont">
+          <ProductList />
+        </div>
       </div>
-      <div className="product_list__cont">
-        <ProductList />
-      </div>
+
       <div className="cartMain__cont">
         <Cart />
       </div>

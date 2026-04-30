@@ -1,3 +1,4 @@
+import "./scss/productList.scss";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 import { Items } from "./ProductsCard";

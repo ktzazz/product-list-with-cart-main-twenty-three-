@@ -1,0 +1,17 @@
+@use "mixins" as m;
+
+.product__grid {
+  display: flex;
+  flex-direction: column;
+  gap: m.rem(16);
+  margin-block-start: calc(m.rem(33) - 2vh);
+  @include m.responsive(tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.no__results {
+  text-align: center;
+  color: var(--red);
+}
