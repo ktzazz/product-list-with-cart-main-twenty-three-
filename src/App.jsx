@@ -2,14 +2,21 @@ import "./scss/App.scss";
 import { ProductList } from "./productList";
 import { Cart } from "./cart";
 import { Filter } from "./filter";
-import CartProvider from "./CartProvider";
+import { BtnFilter } from "./btnFilter";
+import { useContext } from "react";
+import { CartContext } from "./CartContext";
 
 function App() {
+  const { buttonFilter } = useContext(CartContext);
+
   return (
-    <CartProvider>
+    <>
       <div className="block__a">
         <div className="dessert_filter__cont">
           <h1>Desserts</h1>
+          <BtnFilter />
+        </div>
+        <div className={`block  ${!buttonFilter ? "" : " on"}`}>
           <Filter />
         </div>
         <div className="product_list__cont">
@@ -33,7 +40,7 @@ function App() {
         . Coded by{" "}
         <a href="https://www.frontendmentor.io/profile/ktzazz">Katia Aragón</a>.
       </footer>
-    </CartProvider>
+    </>
   );
 }
 

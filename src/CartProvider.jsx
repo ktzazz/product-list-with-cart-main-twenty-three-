@@ -15,6 +15,15 @@ const CartProvider = ({ children }) => {
   const [appliedCats, setAppliedCats] = useState([]);
   const [appliedIngs, setAppliedIngs] = useState([]);
 
+  const [buttonFilter, setBtnFilter] = useState();
+
+  const filterDefault = () => {
+    if (!buttonFilter) {
+      return setBtnFilter(true);
+    }
+    return setBtnFilter(false);
+  };
+
   const addToCart = (product) => {
     //el parámetro dentro de la funcion addToCart se llama product
     setCart((prevItem) => {
@@ -146,6 +155,8 @@ const CartProvider = ({ children }) => {
         tempIngs,
         applyFilters,
         clearFilters,
+        buttonFilter,
+        filterDefault,
       }}
     >
       {children}

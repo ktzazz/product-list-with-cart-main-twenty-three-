@@ -1,0 +1,14 @@
+@use "mixins" as m;
+
+.block {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.on {
+  max-height: 150px;
+  @include m.responsive(desktop) {
+    max-height: 120px;
+  }
+}
