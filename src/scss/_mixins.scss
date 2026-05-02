@@ -13,7 +13,9 @@ $breakpoints: (
   // 760px (iPad/Tablets)
   desktop: 64em,
   // 1024px (Laptops/Tablets Pro)
-  desktop-lg: 90em, // 1440px (Monitor de escritorio)
+  desktop-lg: 90em,
+  // 1440px (Monitor de escritorio)
+  desktop-xl: 120em, // 1920px (Monitor de escritorio grande)
 );
 
 @mixin responsive($size) {

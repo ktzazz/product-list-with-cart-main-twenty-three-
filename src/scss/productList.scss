@@ -3,11 +3,14 @@
 .product__grid {
   display: flex;
   flex-direction: column;
-  gap: m.rem(16);
+  row-gap: 3vh;
   margin-block-start: calc(m.rem(33) - 2vh);
   @include m.responsive(tablet) {
     flex-direction: row;
     flex-wrap: wrap;
+
+    justify-content: space-between;
+    margin-inline-end: 3vw;
   }
 }
 

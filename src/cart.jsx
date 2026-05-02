@@ -28,11 +28,10 @@ export const Cart = () => {
               <div className="item__num">
                 <span className="item__qty">{item.quantity}x</span>
                 <span className="item__price">
-                  @{""}
-                  {item.price}
+                  @{""}${item.price.toFixed(2)}
                 </span>
                 <span className="item__total">
-                  {item.price * item.quantity}
+                  ${(item.price * item.quantity).toFixed(2)}
                 </span>
               </div>
               <button onClick={() => removeItem(item.name)}>

@@ -3,8 +3,8 @@ import { BtnCart } from "./addCart";
 
 export const Items = ({ product }) => {
   return (
-    <div className="product__grid">
-      <div className="product__card">
+    <div className="product__card">
+      <div className="pic__cont">
         <picture>
           <source
             media="(min-width: 1024px)"
@@ -18,11 +18,14 @@ export const Items = ({ product }) => {
           />
           <img src={product.image.mobile} alt={product.name} />
         </picture>
-
+        <div className="btn__addTo">
+          <BtnCart product={product} />
+        </div>
+      </div>
+      <div className="txt__productCard">
+        <p className="category">{product.category}</p>
         <h3>{product.name}</h3>
-        <p>{product.category}</p>
-        <p>{product.price}</p>
-        <BtnCart product={product} />
+        <p className="price">${product.price.toFixed(2)}</p>
       </div>
     </div>
   );

@@ -40,13 +40,19 @@
 }
 
 h1 {
-  font-size: var(--h1-f-size);
+  font-size: calc(var(--h1-f-size) + 1vh);
   color: var(--rose-900);
   font-weight: var(--weight-700);
+  @include m.responsive(desktop-xl) {
+    font-size: calc(var(--h1-f-size) + 2.5vh);
+  }
 }
 
 .dessert_filter__cont {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  @include m.responsive(tablet) {
+    margin-inline-end: 3vw;
+  }
 }
