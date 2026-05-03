@@ -4,11 +4,30 @@
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--rose-50);
+  width: 100%;
+  border-radius: 25px;
+  @include m.responsive(tablet) {
+    width: calc(100% - 3vw);
+  }
 }
 
 .on {
-  max-height: 150px;
+  max-height: 300px;
+}
+
+.filter__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  padding: 3vw;
+
   @include m.responsive(desktop) {
-    max-height: 120px;
+    padding-block: 2vw;
   }
+}
+
+.filter__h3 {
+  color: var(--red);
+  font-size: var(--cart-title-f-size);
 }
