@@ -4,9 +4,10 @@
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: var(--rose-50);
+  background-color: var(--rose-filter);
   width: 100%;
   border-radius: 25px;
+  margin-block: 1vh 3vh;
   @include m.responsive(tablet) {
     width: calc(100% - 3vw);
   }
@@ -21,7 +22,6 @@
   flex-direction: column;
   gap: 2.5vh;
   padding: 3vw;
-
   @include m.responsive(desktop) {
     padding-block: 2vw;
   }
