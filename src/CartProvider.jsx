@@ -157,6 +157,8 @@ const CartProvider = ({ children }) => {
         clearFilters,
         buttonFilter,
         filterDefault,
+        appliedCats,
+        appliedIngs,
       }}
     >
       {children}

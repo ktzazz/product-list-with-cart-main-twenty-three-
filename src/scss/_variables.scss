@@ -17,7 +17,7 @@ $category-f-size: m.rem(14);
 $add-to-f-size: m.rem(15);
 $products-name-f-size: m.rem(16);
 $h1-f-size: clamp(m.rem(24), calc(m.rem(26) + 2vw), m.rem(35));
-$cart-title-f-size: m.rem(18);
+$cart-title-f-size: clamp(m.rem(18), calc(m.rem(20) + 1vw), m.rem(24));
 
 $weight-400: 400;
 $weight-600: 600;

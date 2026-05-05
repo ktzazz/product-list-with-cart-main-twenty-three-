@@ -14,20 +14,100 @@
 }
 
 .on {
-  max-height: 300px;
+  max-height: 370px;
+  @include m.responsive(desktop) {
+    max-height: 270px;
+  }
 }
 
 .filter__container {
   display: flex;
   flex-direction: column;
   gap: 2.5vh;
-  padding: 3vw;
+  padding: 3.5vh 3vw 2vh 3.5vw;
   @include m.responsive(desktop) {
-    padding-block: 2vw;
+    padding: 3vh 2vw 1.5vh 2vw;
   }
 }
 
 .filter__h3 {
-  color: var(--red);
-  font-size: var(--cart-title-f-size);
+  color: var(--rose-500);
+  font-size: m.rem(18);
+  margin-block-end: 1.5vh;
+  @include m.responsive(tablet) {
+    font-size: var(--cart-title-f-size);
+  }
+}
+
+.ingredients__cont {
+  margin-block-start: 1.5vh;
+}
+
+.filter__op {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: m.rem(10);
+
+  & button {
+    padding: m.rem(4) m.rem(16);
+    border: transparent;
+    background-color: var(--rose-100);
+    border-radius: m.rem(25);
+    color: var(--rose-500);
+    font-weight: var(--weight-400);
+    cursor: pointer;
+    font-family: var(--font-family);
+  }
+
+  & button:hover {
+    background-color: var(--rose-500);
+    color: var(--rose-filter);
+  }
+
+  & .active {
+    background-color: var(--rose-500);
+    font-weight: var(--weight-600);
+    color: var(--rose-100);
+  }
+}
+
+.filter-actions {
+  display: flex;
+  gap: 1vw;
+  justify-content: flex-end;
+
+  & button {
+    padding: m.rem(4) m.rem(16);
+    border: transparent;
+    border-radius: m.rem(25);
+    font-weight: 450;
+    font-size: var(--add-to-f-size);
+    font-family: var(--font-family);
+    cursor: pointer;
+  }
+}
+
+.btn-apply {
+  background-color: var(--rose-500);
+  color: var(--rose-filter);
+}
+
+.btn-apply:hover {
+  background-color: var(--rose-900);
+  color: var(--rose-filter);
+}
+
+.btn-clear {
+  background-color: var(--rose-900);
+  color: var(--rose-filter);
+}
+
+.btn-clear:hover {
+  background-color: var(--rose-100);
+  color: var(--rose-500);
+}
+
+.dis {
+  display: none;
 }
