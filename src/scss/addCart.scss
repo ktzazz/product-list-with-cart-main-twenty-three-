@@ -1,1 +1,77 @@
 @use "mixins" as m;
+
+.default__btn {
+  display: flex;
+  align-items: center;
+  width: 55%;
+
+  font-weight: var(--weight-600);
+  font-size: var(--category-f-size);
+  font-family: var(--font-family);
+  text-wrap: nowrap;
+  border-radius: m.rem(25);
+  @include m.responsive(tablet) {
+    width: 70%;
+  }
+  @include m.responsive(desktop) {
+    width: 55%;
+  }
+}
+
+.btn__cart {
+  display: flex;
+  justify-content: center;
+}
+
+.add__ToCart {
+  @extend .default__btn;
+  color: var(--rose-900);
+  background-color: var(--rose-50);
+  padding: m.rem(10) m.rem(20);
+  border: 1px solid var(--rose-300);
+  gap: m.rem(10);
+  justify-content: center;
+  cursor: pointer;
+}
+
+.add__ToCart:hover {
+  color: var(--red);
+  transition: color 0.2s ease;
+}
+
+.btn__quantity {
+  @extend .default__btn;
+  color: var(--rose-50);
+  background-color: var(--red);
+  padding: m.rem(10) m.rem(20);
+  border: 1px solid var(--red);
+  gap: m.rem(30);
+  justify-content: space-around;
+}
+
+.minus,
+.plus {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid var(--rose-50);
+  border-radius: 50%;
+}
+
+.minus {
+  display: flex;
+  padding: m.rem(9) m.rem(5);
+  fill: var(--rose-50);
+}
+
+.plus {
+  display: flex;
+  padding: m.rem(5) m.rem(5);
+  fill: var(--rose-50);
+}
+
+.minus:hover,
+.plus:hover {
+  fill: var(--red);
+  background-color: var(--rose-50);
+  transition: all 0.2s ease;
+}
