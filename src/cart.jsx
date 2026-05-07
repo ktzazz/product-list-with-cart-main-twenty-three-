@@ -60,12 +60,15 @@ export const Cart = () => {
               src="/images/icon-carbon-neutral.svg"
               alt="icon_carbon_neutral"
             />
-            <span className="note">This is a </span>
-            <span className="note__bold"> carbon-neutral </span>
-            <span className="note">delivery</span>
+            <div className="note">
+              <span className="note">This is a </span>
+              <span className="note__bold"> carbon-neutral </span>
+              <span className="note">delivery</span>
+            </div>
           </div>
-
-          <Confirmation total={orderTotal} />
+          <div className="conf__base">
+            <Confirmation total={orderTotal} />
+          </div>
         </div>
       )}
     </div>

@@ -1,0 +1,39 @@
+@use "mixins" as m;
+
+.cnfrm__btn {
+  width: 100%;
+  padding-block: m.rem(12);
+  border-radius: m.rem(25);
+  font-weight: var(--weight-600);
+  font-size: m.rem(13);
+  font-family: var(--font-family);
+  background-color: var(--red);
+  color: var(--rose-50);
+  border: none;
+
+  @include m.responsive(tablet) {
+    font-size: m.rem(11);
+  }
+  @include m.responsive(desktop) {
+    font-size: m.rem(13);
+  }
+}
+
+.cnfrm__btn:hover,
+.cnfrm__btn:active {
+  background-color: var(--red-hover);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.confirm__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: m.rem(30);
+  background-color: var(--rose-50);
+  border-radius: 5%;
+  z-index: 5;
+}

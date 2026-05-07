@@ -196,3 +196,33 @@
     font-size: m.rem(18);
   }
 }
+
+.cart__note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--rose-100);
+  width: 100%;
+  height: m.rem(50);
+  border-radius: 15px;
+  color: var(--rose-900);
+  font-size: m.rem(12);
+  gap: m.rem(10);
+
+  @include m.responsive(tablet) {
+    font-size: m.rem(10);
+    padding-inline-start: 1vw;
+  }
+  @include m.responsive(desktop) {
+    font-size: m.rem(12);
+  }
+}
+
+.note__bold {
+  font-weight: var(--weight-700);
+}
+
+.conf__base {
+  margin-block-start: m.rem(21);
+  width: 100%;
+}

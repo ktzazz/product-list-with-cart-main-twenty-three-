@@ -1,3 +1,4 @@
+import "./scss/confirmation.scss";
 import { useContext, useState } from "react";
 import { CartContext } from "./CartContext";
 
@@ -9,7 +10,9 @@ export const Confirmation = ({ total }) => {
   return (
     <div className="btn__confirm">
       {!btnConfirm ? (
-        <button onClick={() => setBtnConfirm(true)}>Confirm</button>
+        <button className="cnfrm__btn" onClick={() => setBtnConfirm(true)}>
+          Confirm Order
+        </button>
       ) : (
         <div className="confirm__container">
           <img src="/images/icon-order-confirmed.svg" alt="order_confirmed" />
