@@ -1,7 +1,7 @@
 import "./scss/productList.scss";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
-import { Items } from "./ProductsCard";
+import { Items } from "./productsCard";
 
 export const ProductList = () => {
   // Le pedimos al contexto la lista que YA PASÓ por los filtros
