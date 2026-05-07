@@ -24,8 +24,10 @@
 }
 
 .cartMain__cont {
+  margin-block-end: m.rem(50);
   @include m.responsive(tablet) {
     grid-area: 1 / 4 / 1 / 4;
+    margin-block-end: 0;
   }
 }
 

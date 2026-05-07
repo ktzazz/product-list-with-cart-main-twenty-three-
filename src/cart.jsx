@@ -1,3 +1,4 @@
+import "./scss/cart.scss";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 import { Confirmation } from "./confirmation";
@@ -24,7 +25,7 @@ export const Cart = () => {
         <div className="cart__items">
           {cart.map((item, index) => (
             <div key={`${item.name}_${index}`} className="cart__item">
-              <h4>{item.name}</h4>
+              <h4 className="item__nam">{item.name}</h4>
               <div className="item__num">
                 <span className="item__qty">{item.quantity}x</span>
                 <span className="item__price">
@@ -34,8 +35,18 @@ export const Cart = () => {
                   ${(item.price * item.quantity).toFixed(2)}
                 </span>
               </div>
-              <button onClick={() => removeItem(item.name)}>
-                <img src="/images/icon-remove-item.svg" alt="icon_delete" />
+              <button
+                className="item__del"
+                onClick={() => removeItem(item.name)}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                >
+                  <path d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z" />
+                </svg>{" "}
               </button>
             </div>
           ))}
