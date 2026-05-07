@@ -41,6 +41,15 @@
   position: fixed;
 }
 
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .confirm__container {
   position: fixed;
   max-height: 90vh;
@@ -54,6 +63,7 @@
   border-top-left-radius: m.rem(15);
   border-top-right-radius: m.rem(15);
   z-index: 5;
+  animation: slide-up 0.4s ease-out forwards;
   @include m.responsive(tablet) {
     bottom: auto;
     top: 50%;
@@ -61,6 +71,7 @@
     transform: translate(-50%, -50%);
     width: 50%;
     border-radius: m.rem(15);
+    animation: none;
   }
   @include m.responsive(desktop) {
     width: 30%;
