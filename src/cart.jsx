@@ -29,7 +29,8 @@ export const Cart = () => {
               <div className="item__num">
                 <span className="item__qty">{item.quantity}x</span>
                 <span className="item__price">
-                  @{""}${item.price.toFixed(2)}
+                  <span className="at"> @ </span>
+                  {""}${item.price.toFixed(2)}
                 </span>
                 <span className="item__total">
                   ${(item.price * item.quantity).toFixed(2)}

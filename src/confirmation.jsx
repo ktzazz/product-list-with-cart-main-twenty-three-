@@ -47,22 +47,23 @@ export const Confirmation = ({ total }) => {
                   />
 
                   <div className="confirm__items">
-                    <h4>{item.name}</h4>
+                    <h4 className="name__elipsis">{item.name}</h4>
                     <div className="span__order">
                       <span className="confirm__qty">{item.quantity}x</span>
                       <span className="confirm__price">
-                        @{""}${item.price}
+                        <span className="at"> @ </span>
+                        {""} ${item.price.toFixed(2)}
                       </span>
                     </div>
                   </div>
                   <p className="confirm__total">
-                    ${item.price * item.quantity}
+                    ${(item.price * item.quantity).toFixed(2)}
                   </p>
                 </div>
               ))}
               <div className="order__pay">
                 <span className="pay__txt">Order Total</span>
-                <span className="pay__total">${total}</span>
+                <span className="pay__total">${total.toFixed(2)}</span>
               </div>
             </div>
             <button
