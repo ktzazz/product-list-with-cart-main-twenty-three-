@@ -1,16 +1,42 @@
-# React + Vite
+# Frontend Mentor - Product list with cart solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [Product list with cart challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Users should be able to:
 
-## Expanding the ESLint configuration
+- Filter items, add them to the cart and remove them
+- Increase/decrease the number of items in the cart
+- See an order confirmation modal when they click "Confirm Order"
+- Reset their selections when they click "Start New Order"
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Screenshot
+
+![DESKTOP](./RESULTS/desktop.jpeg)
+![TABLET](./RESULTS/tablet.jpeg)
+![MOBILE](./RESULTS/mobile.jpeg)
+
+## My process
+
+I'm really proud of how my SCSS skills have evolved. I’m much quicker now, and whenever I run into a styling challenge, I can find a solution fast, which keeps my workflow steady.
+
+With React, I feel confident handling core tasks like data fetching and state management. I know there's always room to grow, but I’m proud of how I’ve handled the complexity of this project :D .
+
+### Built with
+
+- React
+- SCSS / Sass
+- Json
+- Vite
+- BEM Methodology
+- Vercel
